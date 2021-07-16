@@ -1,0 +1,233 @@
+// h1 font
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+// h2 - header subheading & h3 section headings
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+// h4 & anchors
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+// h5
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@700&display=swap');
+// paragraph font
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+// Global headings
+h1 {
+    font-size: 3rem;
+    font-family: 'Black Ops One', cursive;
+    text-shadow: 4px 4px 9px chocolate;
+    text-align: center;
+    padding: 0;
+    
+
+    @media only screen and (min-width: 295px) {
+        font-size: 4rem;
+    } 
+    @media only screen and (min-width: 356px) {
+        font-size: 5rem;
+    }
+    @media only screen and (min-width: 474px) {
+        font-size: 6.5rem;
+        padding: 0;
+    }
+    @media only screen and (min-width: 567px) {
+        text-align: start;
+        font-size: 8rem;
+    }
+    @media only screen and (min-width: 1090px) {
+        font-size: 9rem;
+    }
+}
+
+h2 {
+    font-family: 'Cabin Sketch', cursive;
+    text-shadow: 3px 3px 5px darkred;
+    text-align: center;
+    margin: 0 1rem 0 1rem;
+    font-size: 2rem;
+    @media only screen and (min-width: 567px) {
+        
+        font-size: 2.2rem;
+        margin: 0;
+    }
+    @media only screen and (min-width: 1090px) {
+        font-size: 2.5rem;
+        text-align: start;
+    }
+}
+
+// Second h3 - The other one is located within the content__about
+.projects-heading {
+    letter-spacing: -0.02em;
+    text-align: left;
+    z-index: 10;
+    position: relative;
+    line-height: 1.6rem;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 4rem;
+    text-shadow: 2px 2px 0px #fff;
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    text-shadow: 8px 6px 7px black;
+
+    @media only screen and (min-width: 474px) and (max-width: 768px) {
+        font-size: 5rem;
+        text-align: start;
+        margin-left: 6rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: 6rem;
+        text-align: start;
+        margin-bottom: .8rem;
+        margin-left: 6rem;
+    }
+}
+        
+
+.content__about__skills > h4 {
+    font-family: 'VT323', monospace; 
+    color: white; 
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    text-shadow: 3px 3px 3px deepskyblue;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 4rem;
+    }
+
+    // text-shadow: none; 
+    @media only screen and (min-width: 1090px) {
+        margin-left: 0;
+        text-align: center;
+        font-size: 5rem;
+    } 
+}
+
+.projects > h4 {
+    font-family: 'VT323', monospace; 
+    color: white; 
+    letter-spacing: .2rem;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+	text-shadow: 0px 3px 15px darkslategrey;
+    text-shadow: 0px 3px 15px darkred;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 4rem;
+    }
+}
+
+.projects > h4:last-of-type {
+    font-family: 'VT323', monospace; 
+    color: white; 
+    letter-spacing: .2rem;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+	text-shadow: 0px 3px 15px navy;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 4rem;
+    }
+}
+
+h5 {
+    font-family: 'Tourney', cursive;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.frameworks {
+    @media only screen and (min-width: 474px) {
+        width: 50%;
+        align-self: center;
+    }
+
+    @media only screen and (min-width: 1090px) {
+        width: 100%;
+    }
+}
+
+i {
+    font-size: 3rem;
+    color: white;
+}
+
+.contact-p {
+    margin: 0 0 ;
+    font-size: 1.4rem;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: .1rem;
+    word-spacing: .2rem;
+    text-align: center;
+    align-self: center;
+    padding: 4rem 0rem 3rem 0rem;
+    font-size: 1.5rem;
+    text-shadow: 3px 1px 1px white;
+    color: navy;
+    font-weight: bold;
+    @media only screen and (max-width: 463px) {
+        width: 100%;
+    }
+    @media only screen and (min-width: 424px) {
+        font-size: 1.6rem;
+    }
+    @media only screen and (min-width: 567px) {
+        font-size: 1.7rem;
+    }
+    @media only screen and (min-width: 768px) {
+        font-size: 1.8rem;
+    }
+}
+
+// Anchor tags - Top Nav
+header > nav > ul > li > a {
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    color: #FFF;
+    text-shadow: -3px 2px 0px darkred;
+ 
+    // Hover effects
+    // letter-spacing: .5rem;
+    // font-weight: bold;
+}
+
+// Social media icons from font-awesome
+.fa-github,
+.fa-instagram,
+.fa-linkedin,
+.fa-youtube {
+    font-size: 2rem;
+}
+
+small {
+    letter-spacing: .2rem;
+    padding: 0 0 2rem;
+    font-size: .6rem;
+    text-shadow: 2px 1px 1px black;
+    font-family: serif;
+      
+    @media only screen and (min-width: 567px) {
+        font-size: .7rem;
+    }
+    @media only screen and (min-width: 768px) {
+        font-size: .8rem;
+    }
+    @media only screen and (min-width: 1090px) {
+        font-size: .9rem;
+    }
+    @media only screen and (min-width: 1200px) {
+        font-size: 1rem;
+    }
+}
