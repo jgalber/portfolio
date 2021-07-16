@@ -370,12 +370,17 @@ p {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+        
+        @media only screen and (max-width: 1090px) {
+            width: 90%;
+        }
     }
 }
 
 img {
     border-radius: 10px;
 }
+
 iframe {
     height: 360px;
     @media only screen and (min-width: 768px) {
