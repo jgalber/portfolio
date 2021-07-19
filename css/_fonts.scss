@@ -82,7 +82,6 @@ h2 {
         margin-left: 6rem;
     }
 }
-        
 
 .content__about__skills > h4 {
     font-family: 'VT323', monospace; 
@@ -190,17 +189,13 @@ i {
     }
 }
 
-// Anchor tags - Top Nav
+// Anchor tags - Top Nav - Specific styling located in the header component
 header > nav > ul > li > a {
     font-family: 'VT323', monospace;
     font-size: 1.5rem;
     letter-spacing: .2rem;
     color: #FFF;
     text-shadow: -3px 2px 0px darkred;
- 
-    // Hover effects
-    // letter-spacing: .5rem;
-    // font-weight: bold;
 }
 
 // Social media icons from font-awesome

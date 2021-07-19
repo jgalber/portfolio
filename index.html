@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
 	<!-- <script src="index.js"></script> -->
     <script src="https://kit.fontawesome.com/4e12779179.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <!-- <script src="hamburger.js"></script> -->
 </head>
 <body>
@@ -16,10 +17,10 @@
     <header>
         <nav>
             <ul>    
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about" class="hover">About Me</a></li>
+                <li><a href="#projects" class="hover">Projects</a></li>
                 <!-- <li><a href="#blog">Blog</a></li> -->
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="hover">Contact</a></li>
             </ul>
             <div class="menu-bars" id="toggle">
                 <input type="checkbox">
@@ -43,13 +44,9 @@
             <!-- style="font-size: 3rem; color:cadetblue;" -->
         </h3>
         <article class="content__about__intro">
-                                        <!-- Seattle-based front-end Developer and content creator.  -->
             <p class="content__about__intro--p">Hi, my name is Juan. Thanks for visiting my portfolio!</p>
             <!-- class="content__about__intro--pOne" -->
             <p class="content__about__intro--p">I am a recent graduate of the certificate in Front-End Development with HTML, CSS & Javascript co-hort program through the University of Washington. One of my passions is creating innovative, stunning, and highly efficient websites. I am also passionate about music production and editing.</p>
-            <!-- Hi, my name is Juan and my passion is to create awesome/ stunning and responsive websites from scratch by following best practices. -->
-         
-            <!-- Currently, looking forward/ waiting to new challenges and experiences in UI/UX, accessibility, and design. -->
             <p class="content__about__intro--p">I am currently open and eager to take on new challenges in the web development space, enjoy working on UI/UX, and SEO.</p>
             <p class="content__about__intro--p">As you peruse through my portfolio, you will discover many of my technical skills, and projects.</p>
 
@@ -102,35 +99,36 @@
         <div class="projects__webDev">
             <!-- <h4>Web Development</h4> -->
             <a  href="https://jgalber.github.io/bon-voyage/" 
-                style="cursor: pointer;" 
+                style="cursor: pointer;"
+                title="Bon Voyage Project" 
                 data-toggle="tooltip" 
-                title="Tooltip on right" 
                 target="_blank">
                 <div class="projects__wrapper__card">
-                    <img src="./img/bon-voyage-project-min.png" alt="" style="width: 100%;">
+                    <img src="./img/bon-voyage-project-min.png" alt="" style="width: 100%;" class="b-voyage" />
+                    <p style="display: none;" class="bon-v"> hey!!</p>
                 </div>
             </a>
-            <a href="https://jgalber.github.io/lesson-03-assignment/index.html" style="cursor: pointer;" data-toggle="tooltip" title="Tooltip on right" target="_blank">
+            <a href="https://jgalber.github.io/lesson-03-assignment/index.html" style="cursor: pointer;" data-toggle="tooltip" title="Remuus Project" target="_blank">
                 <div class="projects__wrapper__card">
                     <img src="./img/remuus-min.png" style="width: 100%;" alt="">
                 </div>
             </a>
-            <a href="https://jgalber.github.io/assignment-04-mockup/#" target="_blank">
+            <a href="https://jgalber.github.io/assignment-04-mockup/#" style="cursor: pointer;" data-toggle="tooltip" title="Kitties to Go - Mockup" target="_blank">
                 <div class="projects__wrapper__card">
                     <img src="./img/kitties-to-go-mockup-min.png"  style="width: 100%;" alt="">
                 </div>
             </a>
-            <a href="https://jgalber.github.io/archery-academy-project/index.html" target="_blank">
+            <a href="https://jgalber.github.io/archery-academy-project/index.html" style="cursor: pointer;" data-toggle="tooltip" title="Archery School Project" target="_blank">
             <div class="projects__wrapper__card">
                 <img src="./img/archery-academy-homepage-min.png"  style="width: 100%;"  alt="">
             </div>
             </a>
-            <a href="https://jgalber.github.io/html200-adopt-a-dog/" target="_blank">
+            <a href="https://jgalber.github.io/html200-adopt-a-dog/" style="cursor: pointer;" data-toggle="tooltip" title="Adopt A Dog Project" target="_blank">
             <div class="projects__wrapper__card">
                 <img src="./img/adopt-a-dog-homepage-min.png"  style="width: 100%;"  alt="">
             </div> 
             </a>
-            <a href="https://confident-johnson-6cc96d.netlify.app/#/" target="_blank">
+            <a href="https://confident-johnson-6cc96d.netlify.app/#/" style="cursor: pointer;" data-toggle="tooltip" title="Travel Advisor - Final Course Project" target="_blank">
                 <div class="projects__wrapper__card">
                     <img src="./img/travel-advisor-index-min.png" style="width: 100%;" alt="">
                 </div>
@@ -139,11 +137,8 @@
         </div>
         <h4>Music Projects</h4>
         <div class="projects__musicPro">
-            <!-- <iframe frameborder="0" width="100%" height="240" scrolling="no" src="https://embed.traxsource.com/player/track/8984738" style="grid-column: 1 / 3;"></iframe> -->
             <iframe  frameborder="0" width="100%" height="660" src="https://music.imusician.pro/a/xp_Wj_gw/jgalber/moment-in-the-sun/"></iframe>
         </div>
-        
-        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, odit.</p> -->
     </section>
      
 
@@ -157,17 +152,14 @@
                 <ul>
                     <li><a href="https://github.com/jgalber" target="_blank"><i class="fab fa-github"></i></a></li>
                     <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/signup" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/juan-bermejo-gallego-801854217/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
-                <!-- <a href="https://github.com/jgalber" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/signup" target="_blank"><i class="fab fa-linkedin"></i></a> -->
-                <!-- <a href="https://music.youtube.com/playlist?list=OLAK5uy_na7Y9XsKDt-6wQmNJgB2UQhI5yCvJMksw" target="_blank"><i class="fab fa-youtube"></i></a> -->
             </div>
         </div>
         <small><span class="copy">&copy;</span><span id="currentYear"></span> JGalber Designs</small>
     </footer>
     <script src="hamburger.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
     <script src="index.js"></script>
 
 </body>
